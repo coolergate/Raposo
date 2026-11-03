@@ -1,0 +1,30 @@
+{
+	"name": "@raposo/framework",
+	"version": "1.0.0",
+	"description": "",
+	"main": "out/init.luau",
+	"types": "out/index.d.ts",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "npm run build"
+	},
+	"type": "commonjs",
+	"files": [
+		"out",
+		"!**/*.tsbuildinfo"
+	],
+	"devDependencies": {
+		"@rbxts/compiler-types": "^3.0.0-types.0",
+		"@rbxts/types": "^1.0.960",
+		"@typescript-eslint/eslint-plugin": "^8.72.1",
+		"@typescript-eslint/parser": "^8.72.1",
+		"eslint": "^10.14.0",
+		"eslint-plugin-roblox-ts": "^1.4.1",
+		"roblox-ts": "^3.0.0",
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@rbxts/t": "^3.2.1"
+	}
+}
